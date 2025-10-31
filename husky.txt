@@ -48,3 +48,8 @@ module.exports = {
   "singleQuote": true,
   "trailingComma": "es5"
 }
+
+eslint.config.js
+    rules: {
+      "react-refresh/only-export-components": "off",
+    },
