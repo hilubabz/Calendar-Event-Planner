@@ -17,7 +17,7 @@ const CardComponent = ({
   task: TaskType[];
 }) => {
   return (
-    <Card className="w-full max-w-md">
+    <Card className="w-full max-w-md duration-500">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-primary">
           {single ? "Today's" : 'Upcoming'} Events
@@ -27,7 +27,7 @@ const CardComponent = ({
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <ScrollArea className={cn('w-full rounded-md', single?'':'h-72')}>
+        <ScrollArea className={cn('w-full rounded-md', single ? '' : 'h-50')}>
           <div className="space-y-4 pr-4">
             {task.length === 0 ? (
               <p className="text-center text-muted-foreground">No events</p>
